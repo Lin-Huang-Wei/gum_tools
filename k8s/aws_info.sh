@@ -8,9 +8,9 @@ AWS_CONFIG_PATH=$(gum input \
   --cursor.foreground "#FFA500"\
   --prompt.foreground "#6495ED" \
   --prompt ">>> " \
-  --placeholder "~/.aws/config" \
+  --placeholder "${HOME}/.aws/config" \
   --width 80 \
-  --value "~/.aws/config"
+  --value "${HOME}/.aws/config"
 )
 
 [[ -n "${AWS_CONFIG_PATH}" ]] && [[ -f "${AWS_CONFIG_PATH}" ]];

@@ -1,6 +1,7 @@
 #!/bin/bash
 
-source ./aws_info.sh
+BASE_DIR=$(dirname "$0")
+source "${BASE_DIR}/aws_info.sh"
 
 function _k8s_config_update() {
   local region=${region}
